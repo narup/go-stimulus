@@ -1,0 +1,10 @@
+<section class="header"></section>
+<nav class="navbar">
+    <div class="container">
+        <span class="logo__text"><a href="/">logo</a></span>
+        <ul class="navbar-list">
+            <li class="navbar-item"><a class="navbar-link {{if eq .View.Name "index"}} nav_link__selected {{end}}" href="/">Home</a></li>
+            <li class="navbar-item"><a class="navbar-link {{if eq .View.Name "login"}} nav_link__selected {{end}}" href="/login">Login</a></li>
+        </ul>
+    </div>
+</nav>

@@ -1,0 +1,7 @@
+node_modules/
+public/bundle.js
+go-stimulus
+.idea/
+.DS_Store
+public/
+yarn.lock
