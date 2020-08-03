@@ -5,3 +5,4 @@ go-stimulus
 .DS_Store
 public/
 yarn.lock
+go.sum
