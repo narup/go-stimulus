@@ -5,8 +5,8 @@ StimulusJS, as per their website, is suitable for the applications that have ser
 and want to sprinkle Javascript to make them sparkle. This project also uses Webpack to bundle Javascript and CSS, 
 and Babel to transpile ES6 code back to vanilla JavaScript so that every environment (e.g. browser) can interpret it.
 
-Golang backend is using [Fiber - Express inspired web framework written in Go](https://github.com/gofiber) to serve HTML 
-and other static content such as Javascript and CSS. HTML can be rendered in server-side using 
+Golang backend is using [Fiber - Express inspired web framework written in Go](https://github.com/gofiber) for APIs, 
+serve HTML, and other static content such as Javascript and CSS. HTML can be rendered in server-side using 
 [HTML Template Engine ](https://github.com/gofiber/template) supported by Fiber.
 
 ### Structure of the project
