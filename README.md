@@ -10,7 +10,7 @@ serve HTML, and other static content such as Javascript and CSS. HTML can be ren
 [HTML Template Engine ](https://github.com/gofiber/template) supported by Fiber.
 
 ### Structure of the project
-Front-end: inside a folder 'webapp' with subdirectories
+#### Front-end: inside a folder 'webapp' with subdirectories
    - **css** - contains the stylesheet files before bundling
    - **html** - contains all the - mostly HTML files for pages, layouts, and partials. Go backend can return server-side
     rendered HTML using html template engine
@@ -21,6 +21,14 @@ Front-end: inside a folder 'webapp' with subdirectories
    ```
    - **src** - contains StimulusJS controllers and front-end Javascript. index.js is the entry point 
 
+#### Back-end:
+   - main.go - is the entry point for the server which configures fiber app, routes for views and static files. It then 
+   starts the web server 
+   - internal - special directory name recognised by the go tool which will prevent one package from being imported by 
+   another unless both share a common ancestor
+   - api - RESTful APIs that returns used by views to either render HTML or return JSON or XML data directly to the web
+   - view - contains routes and handlers to return HTML views (complete page or partial). It uses the go HTML template
+   engine, and a specific layout defined in webapp/html/layouts/main.html 
 
 #### To run the project
 
